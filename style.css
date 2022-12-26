@@ -17,7 +17,6 @@ ul {
 }
 
 body {
-    background-color: white;
     background: url(./assets/bg.svg);
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -54,13 +53,12 @@ body {
 
 .tea ul {
     border-top: 1px solid var(--blue);
-
-    padding: 15px 15px 15px 15px;
+    padding: 8px 15px 8px 15px;
 }
 
 .tea ul h2 {
     color: var(--orange);
-    margin: 0px 0px 10px 0px;
+    margin: 0px 0px 2px 0px;
 }
 
 .tea ul li {
@@ -87,7 +85,6 @@ body {
 .tea ul.contact {
     border: 0;
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
@@ -96,20 +93,30 @@ body {
     padding: 10px 30px 10px 30px;
     border: 2px solid var(--orange);
     background-color: var(--blue);
-
-    justify-content: center;
 }
 
 .tea ul.contact li a {
     color: var(--dark-blue);
     text-decoration: none;
     text-align: center;
-    font-size: 18px;
+    font-size: 10px;
     font-weight: 400;
 }
 
-@media (min-width: 450px) {
+@media (max-width: 415px) {
+    .tea ul.contact {
+        flex-wrap: wrap;
+    }
+    .tea ul.contact li {
+        text-align: center;
+    }
+}
+
+@media (min-width: 490px) {
     .tea p {
+        font-size: 16px;
+    }
+    .tea ul.contact li a {
         font-size: 16px;
     }
 }
