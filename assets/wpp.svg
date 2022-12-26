@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="18px" height="18px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1491 1495"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#0E1921}
+   ]]>
+  </style>
+ </defs>
+ <g id="Camada_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M1027 841c-30,-18 -69,-39 -105,-24 -28,11 -45,54 -63,76 -9,11 -20,13 -34,8 -103,-41 -182,-110 -239,-205 -10,-15 -8,-26 4,-40 17,-20 38,-43 43,-70 5,-28 -8,-60 -19,-84 -15,-31 -31,-75 -62,-93 -29,-16 -66,-7 -92,14 -43,36 -65,92 -64,147 0,16 2,32 6,47 9,37 26,71 45,103 14,25 30,49 46,72 56,75 124,140 204,188 39,25 82,46 126,61 50,16 94,33 148,23 56,-11 111,-46 133,-100 7,-16 10,-34 7,-50 -8,-35 -55,-56 -84,-73zm-605 396l25 15c93,56 199,85 306,85 330,0 599,-269 599,-599 0,-330 -269,-599 -599,-599 -330,0 -599,269 -599,599 0,109 30,217 88,311l15 25 -60 223 225 -60zm-422 258l107 -400c-60,-110 -92,-232 -92,-357 0,-407 331,-738 738,-738 407,0 738,331 738,738 0,407 -331,738 -738,738 -122,0 -243,-30 -351,-89l-402 108z"/>
+ </g>
+</svg>
