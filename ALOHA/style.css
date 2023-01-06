@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --orange: #F07A30;
+    --blue: #8BD6F7;
+    --dark-blue: #0E1921;
+    --logo: url(./assets/logo.svg);
+}
+
+body {
+    background: url(./assets/bg.svg);
+    font-family: 'Josefin Sans', sans-serif;
+    opacity: 0;
+    animation: appear 0.5s forwards;
+}
+
+#logo {
+    padding: 8% 5% 8% 5%;
+    margin: 0px 20% 30% 20%;
+
+    background-color: white;
+    background-image: var(--logo);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+
+    border-right: 2px solid var(--orange);
+    border-bottom: 2px solid var(--orange);
+    border-left: 2px solid var(--orange);
+
+    align-items: center;
+    position: relative;
+    z-index: 5;
+
+    opacity: 0;
+    animation: appear 1.0s forwards;
+}
+
+.tea {
+    background-color: white;
+    margin: -40% 5% 5% 5%;
+    border: 2px solid var(--orange);
+    padding: 15% 5% 5% 5%;
+    font-size: 12px;
+
+    position: relative;
+    z-index: 0;
+}
+
+.tea h1.teaType {
+    margin: 5px 0px 5px 0px;
+    padding: 10px 10px 6px 10px;
+    text-align: center;
+    color: var(--orange);
+    font-weight: bold;      
+    animation: appear 1.0s forwards;
+}
+
+.tea ul {
+    border-top: 1px solid var(--blue);
+    padding: 8px 15px 8px 15px;
+
+    opacity: 0;
+    animation: appear 1.0s forwards;
+}
+
+.tea ul h2 {
+    color: var(--orange);
+    margin: 0px 0px 2px 0px;
+}
+
+.tea ul li {
+    color: var(--dark-blue);
+    font-weight: 300;
+}
+
+.tea ul.last {
+    border-bottom: 1px solid var(--blue);
+}
+
+.tea p.price {
+    margin-top: 25px;
+    border: 2px solid var(--orange);
+    padding: 10px 5px 10px 5px;
+    background-color: white;
+    color: var(--orange);
+
+    text-align: center;
+    font-weight: 400;
+    font-size: 10px;
+
+    opacity: 0;
+    animation: appear 1.0s forwards;
+}
+
+.tea ul.contact {
+    margin-top: 7px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.tea ul.contact li {
+    margin: 10px 10px 10px 10px;
+    padding: 10px 30px 10px 30px;
+    border: 2px solid var(--orange);
+    background-color: var(--blue);
+    text-align: center;
+}
+
+.tea ul.contact li a {
+    color: var(--dark-blue);
+    text-decoration: none;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+@keyframes appear {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 490px) {
+    .tea ul {
+        padding: 10px 15px 10px 15px;
+    }
+    .tea p.price {
+        font-size: 16px;
+    }
+    .tea ul.contact li a {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .tea {
+        font-size: 16px;
+    }
+    .tea ul {
+        padding: 12px 15px 12px 15px;
+    }    
+    #logo {
+        margin: -8px 25% 30% 25%;
+    }
+}
+
+@media (min-width: 979px) {
+    .tea {
+        margin: -43% 20% 3% 20%;
+    }
+
+    #logo {
+        margin: -8px 30% 30% 30%;
+    }
+}
