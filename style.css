@@ -19,6 +19,8 @@ ul {
 body {
     background: url(./assets/bg.svg);
     font-family: 'Josefin Sans', sans-serif;
+    opacity: 0;
+    animation: appear 0.5s forwards;
 }
 
 #logo {
@@ -38,22 +40,37 @@ body {
     align-items: center;
     position: relative;
     z-index: 5;
+
+    opacity: 0;
+    animation: appear 1.0s forwards;
 }
 
 .tea {
     background-color: white;
     margin: -40% 5% 5% 5%;
     border: 2px solid var(--orange);
-    padding: 20% 5% 5% 5%;
+    padding: 15% 5% 5% 5%;
     font-size: 12px;
 
     position: relative;
     z-index: 0;
 }
 
+.tea h1.teaType {
+    margin: 5px 0px 5px 0px;
+    padding: 10px 10px 6px 10px;
+    text-align: center;
+    color: var(--orange);
+    font-weight: bold;      
+    animation: appear 1.0s forwards;
+}
+
 .tea ul {
     border-top: 1px solid var(--blue);
     padding: 8px 15px 8px 15px;
+
+    opacity: 0;
+    animation: appear 1.0s forwards;
 }
 
 .tea ul h2 {
@@ -70,19 +87,23 @@ body {
     border-bottom: 1px solid var(--blue);
 }
 
-.tea p {
-    border: 2px solid var(--orange);
+.tea p.price {
     margin-top: 25px;
-    padding: 5px;
+    border: 2px solid var(--orange);
+    padding: 10px 5px 10px 5px;
     background-color: white;
     color: var(--orange);
 
     text-align: center;
     font-weight: 400;
     font-size: 10px;
+
+    opacity: 0;
+    animation: appear 1.0s forwards;
 }
 
 .tea ul.contact {
+    margin-top: 7px;
     border: 0;
     display: flex;
     justify-content: center;
@@ -93,6 +114,7 @@ body {
     padding: 10px 30px 10px 30px;
     border: 2px solid var(--orange);
     background-color: var(--blue);
+    text-align: center;
 }
 
 .tea ul.contact li a {
@@ -103,17 +125,21 @@ body {
     font-weight: 400;
 }
 
-@media (max-width: 415px) {
-    .tea ul.contact {
-        flex-wrap: wrap;
+@keyframes appear {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
     }
-    .tea ul.contact li {
-        text-align: center;
+    100% {
+        opacity: 1;
     }
 }
 
 @media (min-width: 490px) {
-    .tea p {
+    .tea ul {
+        padding: 10px 15px 10px 15px;
+    }
+    .tea p.price {
         font-size: 16px;
     }
     .tea ul.contact li a {
@@ -125,7 +151,9 @@ body {
     .tea {
         font-size: 16px;
     }
-    
+    .tea ul {
+        padding: 12px 15px 12px 15px;
+    }    
     #logo {
         margin: -8px 25% 30% 25%;
     }
